@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts">
-  import Vue from "vue";
+  import { defineComponent } from 'vue';
   import Status from './status.vue';
   import HeaderMenu from './header-menu.vue';
   import MainArea from './main-area.vue';
@@ -16,7 +16,7 @@
   import AccessPoint from './AccessPoint';
   import AppViewModel from './AppViewModel';
 
-  export default Vue.extend({
+  export default defineComponent({
     components: {
       'status': Status,
       'header-menu': HeaderMenu,
@@ -54,7 +54,7 @@
           else
             this.renderer.clear();
         }
-      }
+      },
       reset(): void {
         if (confirm('Are you sure you want to delete all signal readings?')) {
           this.readings = [];

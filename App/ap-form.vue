@@ -23,12 +23,12 @@
 </template>
 
 <script lang="ts">
-  import Vue from 'vue';
+  import { defineComponent } from 'vue';
   import AccessPoint from './AccessPoint';
   import Reading from './Reading';
   import APFormViewModel from './APFormViewModel';
 
-  export default Vue.extend({
+  export default defineComponent({
     props: {
       current: Reading
     },

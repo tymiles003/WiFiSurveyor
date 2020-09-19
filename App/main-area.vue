@@ -7,14 +7,14 @@
 </template>
 
 <script lang="ts">
-  import Vue from 'vue';
+  import { defineComponent } from 'vue';
   import DataPoint from './data-point.vue';
   import Renderer from './Renderer';
   import Point from './Point';
   import Reading from './Reading';
   import AccessPoint from './AccessPoint';
 
-  export default Vue.extend({
+  export default defineComponent({
     components: {
       'data-point': DataPoint
     },

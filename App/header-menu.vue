@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts">
-  import Vue from 'vue';
+  import { defineComponent } from 'vue';
   import APForm from './ap-form.vue';
   import BackgroundForm from './background-form.vue';
   import WiFiStatus from './wifi-status.vue';
@@ -16,7 +16,7 @@
   import AccessPoint from './AccessPoint';
   import Reading from './Reading';
 
-  export default Vue.extend({
+  export default defineComponent({
     components: {
       'ap-form': APForm,
       'background-form': BackgroundForm,

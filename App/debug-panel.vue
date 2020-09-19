@@ -27,12 +27,12 @@
 </template>
 
 <script lang="ts">
-  import Vue from 'vue';
+  import { defineComponent } from 'vue';
   import Signal from './Signal';
   import ColorConverter from './ColorConverter';
   import Color from './Color';
 
-  export default Vue.extend({
+  export default defineComponent({
     props: {
       enabled: Boolean,
       signals: Array

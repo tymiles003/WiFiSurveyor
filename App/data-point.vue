@@ -7,13 +7,13 @@
 </template>
 
 <script lang="ts">
-  import Vue from 'vue';
+  import { defineComponent } from 'vue';
   import Color from './Color';
   import ColorConverter from './ColorConverter';
   import AccessPoint from './AccessPoint';
   import Reading from './Reading';
 
-  export default Vue.extend({
+  export default defineComponent({
     props: {
       index: Number,
       reading: Reading,
